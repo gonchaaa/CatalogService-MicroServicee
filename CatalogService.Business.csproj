@@ -1,0 +1,25 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net7.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="AutoMapper" Version="12.0.1" />
+    <PackageReference Include="MassTransit" Version="8.1.0" />
+    <PackageReference Include="MassTransit.RabbitMQ" Version="8.1.0" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Design" Version="7.0.10">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\CatalogService.Core\CatalogService.Core.csproj" />
+    <ProjectReference Include="..\CatalogService.DataAccess\CatalogService.DataAccess.csproj" />
+    <ProjectReference Include="..\CatalogService.Entities\CatalogService.Entities.csproj" />
+  </ItemGroup>
+
+</Project>
